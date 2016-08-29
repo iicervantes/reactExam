@@ -1,0 +1,22 @@
+{
+  "name": "qexam",
+  "version": "1.0.0",
+  "description": "examplexam",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": "isaias",
+  "license": "ISC",
+  "dependencies": {
+    "history": "^1.17.0",
+    "json-loader": "^0.5.4",
+    "react": "^15.3.1",
+    "react-bootstrap": "^0.30.3",
+    "react-dom": "^15.3.1",
+    "react-router": "^2.7.0",
+    "react-toggle-display":"^2.1.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  }
+}
