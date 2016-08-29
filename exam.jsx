@@ -3,7 +3,7 @@ import { Button, Modal } from 'react-bootstrap';
 
 var Exam = React.createClass({
     /*properties
-     * details= Holding entire test
+     * input= Holding entire test
      */
     getInitialState: function() {
         return {totalscore : 0, testSubmitted: false};
@@ -14,18 +14,18 @@ var Exam = React.createClass({
 
     render: function(){
         var totalPoints = 0;
-        this.props.details.questions.map(question => totalPoints += question.weight);
+        this.props.input.questions.map(question => totalPoints += question.weight);
 
         return(
             <div>
-                <h1>Exam for {this.props.details.topic}</h1>
+                <h1>Exam for {this.props.input.topic}</h1>
                 <hr/>
 
                 <table className="table-bordered">
                     <tbody>
                     <tr>
                         <td className="col-md-9">
-                            <QuestionList questions={this.props.details.questions} onSubmitted={this.handleChange}/>
+                            <QuestionList questions={this.props.input.questions} onSubmitted={this.handleChange}/>
                         </td>
                     </tr>
                     </tbody>
